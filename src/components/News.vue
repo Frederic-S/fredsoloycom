@@ -2,6 +2,7 @@
   <div class="flex mb-4" id="news">
     <div class="w-1/2 bg-gray-400 h-12"><h1>Rebuilding the site</h1></div>
     <div class="w-2/2 bg-gray-500 h-12"><h2>In progress...</h2></div>
+    <p>Site build with Vue js</p>
   </div>
 </template>
 

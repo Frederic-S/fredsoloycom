@@ -13,7 +13,7 @@ Vue.use(
   {
     config: { id: "UA-91636249-3" },
     appName: "Home",
-    pageTrackerScreenviewEnabled: true,
+    path: "/",
   },
   router
 );

@@ -12,6 +12,8 @@ Vue.use(
   VueGtag,
   {
     config: { id: "UA-91636249-3" },
+    appName: "Home",
+    pageTrackerScreenviewEnabled: true,
   },
   router
 );

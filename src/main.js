@@ -8,6 +8,10 @@ createApp(App)
   .use(router)
   .mount('#app')
 
-Vue.use(VueGtag, {
-  config: { id: 'UA-91636249-3' },
-})
+Vue.use(
+  VueGtag,
+  {
+    config: { id: 'UA-91636249-3' },
+  },
+  router
+)

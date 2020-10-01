@@ -2,7 +2,7 @@
   <div class="hello" :style="{ backgroundImage: `url(${backgroundUrl})` }">
     <img id="logo" alt="Vue logo" src="../assets/logo.png" />
     <div class="welltext">
-      <h1>Hello People!</h1>
+      <h1>Hello People</h1>
       <p class="greet">I'm Fred 👀</p>
       <p class="greet2">Web Developer</p>
     </div>

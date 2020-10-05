@@ -2,9 +2,9 @@
   <div class="hello" :style="{ backgroundImage: `url(${backgroundUrl})` }">
     <img id="logo" alt="Vue logo" src="../assets/logo.png" />
     <div class="welltext">
-      <h1>Hello People!!</h1>
-      <p class="greet">I'm Fred 👀</p>
-      <p class="greet2">Web Developer</p>
+      <h1 id="typewriter">Hi People!</h1>
+      <p class="greet" id="line-1">I'm Fred Soloy 👀</p>
+      <p class="greet2" id="line-2">Web Developer</p>
     </div>
     <div class="scroll">
       <a href="#news">
@@ -44,6 +44,8 @@ export default {
 
 .welltext {
   margin-top: 10%;
+  position: absolute;
+  left: 42%;
 }
 
 .greet {
@@ -56,6 +58,55 @@ export default {
   font-size: 1.5rem;
 }
 
+/* ANIMATION ******************/
+#typewriter {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 215px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(25) 1s 2 normal both;
+}
+
+#line-1 {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 235px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 2 normal both;
+  animation-delay: 3.5s;
+}
+
+#line-2 {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 2 normal both;
+  animation-delay: 7s;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    border-right: none;
+  }
+  0.1% {
+    border-right: 1px solid rgb(220, 220, 220);
+  }
+  99.9% {
+    border-right: 1px solid rgb(220, 220, 220);
+  }
+  100% {
+    border: none;
+  }
+}
+
 a {
   color: #42b983;
 }
@@ -64,6 +115,9 @@ a {
 @media (max-width: 640px) {
   .hello {
     padding-top: 10%;
+  }
+  .welltext {
+    left: 22%;
   }
 }
 
